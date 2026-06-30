@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/et_total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total amount"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description (e.g. Dinner)"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_persons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_add_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add Person"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_equal_split"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Equal Split"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_save_split"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Split"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_split_history"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    </LinearLayout>
+</ScrollView>
